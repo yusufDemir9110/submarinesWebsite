@@ -157,7 +157,6 @@ a:hover{
   font-weight:800; 
 }
 #homeImageText p{
-  transition-duration:3s;
   opacity:0;
 }
 #homeImageText p:nth-child(2),p:nth-child(4){
@@ -168,28 +167,36 @@ a:hover{
   color:rgb(237, 36, 0);
 }
 /*js onload fuction is better for this animation. But we don't use js now*/
-html:hover #homeImageText p:nth-child(1){
-  opacity:1;
-  transition-duration:ease;
-  transform:scale(1.1);
+.animation1{
+  animation-name:animationP;
+  animation-duration:3s;
+  animation-iteration-count:1;
+  animation-fill-mode:forwards;
 }
-html:hover #homeImageText p:nth-child(2){
-  opacity:1;
-  transition-duration:ease;
-  transition-delay:1s;
-  transform:scale(1.1);
+.animation2{
+  animation-name:animationP;
+  animation-duration:3s;
+  animation-delay:2s;
+  animation-iteration-count:1;
+  animation-fill-mode:forwards;
 }
-html:hover #homeImageText p:nth-child(3){
-  opacity:1;
-  transition-duration:ease;
-  transition-delay:2.5s;
-  transform:scale(1.1);
+.animation3{
+  animation-name:animationP;
+  animation-duration:3s;
+  animation-delay:4s;
+  animation-iteration-count:1;
+  animation-fill-mode:forwards;
 }
-html:hover #homeImageText p:nth-child(4){
-  opacity:1;
-  transition-duration:ease;
-  transition-delay:4.5s;
-  transform:scale(1.1);
+.animation4{
+  animation-name:animationP;
+  animation-duration:3s;
+  animation-delay:6s;
+  animation-iteration-count:1;
+  animation-fill-mode:forwards;
+}
+@keyframes animationP{
+from{opacity:0;transform:scale(1)}
+to{opacity:1;transfrom:scale(1.1)}
 }
 p{
   text-indent:25px;
@@ -465,7 +472,7 @@ footer img:hover{
     border-top:7px solid black;
     border-radius:5px;
   }
-  #fleetHead{
+  .fleetHead{
     padding: 10px;
     font-size:0.95rem;
     width:60%;
