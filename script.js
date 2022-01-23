@@ -10,4 +10,5 @@ window.addEventListener('load',function(){
   p3.classList.add("animation3");
   p4.classList.add("animation4");
 })
+console.log('fsdf')
 
